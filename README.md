@@ -1,6 +1,6 @@
-# OpenKVK Client
+# OpenKVK Client library + commandline utility
 
-This repository contains a simple PHP client for the (www.openkvk.nl)[http://www.openkvk.nl] API.
+This repository contains a simple PHP client for the [www.openkvk.nl](http://www.openkvk.nl) API.
 
 ## How to use it as a library
 
@@ -34,6 +34,6 @@ Example usage:
 
 ## Resources
 
-* (OpenKVK website)[https://openkvk.nl/]
-* (SBI Codes)[http://www.kvk.nl/download/Standaard%20Bedrijfs%20Indeling%20(SBI)_tcm14-191363.pdf]
-* (SBI Codes - English)[http://www.kvk.nl/download/SBI_2008_Engels_tcm14-195658.pdf]
+* [OpenKVK website](https://openkvk.nl/)
+* [SBI Codes](http://www.kvk.nl/download/Standaard%20Bedrijfs%20Indeling%20(SBI)_tcm14-191363.pdf)
+* [SBI Codes - English](http://www.kvk.nl/download/SBI_2008_Engels_tcm14-195658.pdf)
