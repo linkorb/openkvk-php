@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+
+require_once(__DIR__ . "/../vendor/autoload.php");
+
+$application = new Application('OpenKvk Console Tool', '1.0.0');
+$application->setCatchExceptions(true);
+$application->add(new \OpenKvk\Command\GetByKvkCommand());
+$application->add(new \OpenKvk\Command\GetBySbiCommand());
+$application->run();
