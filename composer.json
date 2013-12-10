@@ -1,7 +1,7 @@
 {
     "name": "linkorb/openkvk",
     "description": "OpenKVK library and commmand-line tools",
-    "homepage": "http://www.github.com/linkorb/openkvk",
+    "homepage": "http://www.github.com/linkorb/openkvk-php",
     "keywords": ["kvk", "nederland", "chamberofcommerce", "api"],
     "type": "library",
     "minimum-stability": "dev" ,
