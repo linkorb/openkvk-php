@@ -28,10 +28,8 @@ class Client
         if (!$format) {
             $format = $this->responseFormat;
         }
-        echo $query . "\n";
 
         $url = $this->baseurl . '/' . $format . '/' . rawurlencode($query);
-        echo $url . "\n";
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -43,6 +41,13 @@ class Client
     public function getByKvk($kvknr)
     {
         $data = $this->doQuery(sprintf("SELECT * FROM kvk WHERE kvks = '%s' LIMIT 1;", $kvknr));
+        return $data;
+    }
+
+    public function getByName($name)
+    {
+        $name=strtolower($name);
+        $data = $this->doQuery(sprintf("SELECT * FROM kvk WHERE LOWER(bedrijfsnaam) LIKE '%%%s%%' LIMIT 1;", $name));
         return $data;
     }
 
@@ -64,14 +69,12 @@ class Client
     {
         $lines = explode("\n", $csv);
         $head = str_getcsv(array_shift($lines), ',', '"');
-        // print_r($head);
         $array = array();
         foreach ($lines as $line) {
             if (trim($line)!='') {
                 $array[] = array_combine($head, str_getcsv($line));
             }
         }
-        //print_r($array);
         return $array;
     }
  }
