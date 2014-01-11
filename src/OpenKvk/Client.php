@@ -44,10 +44,10 @@ class Client
         return $data;
     }
 
-    public function getByName($name)
+    public function getByName($name, $limit = 10)
     {
         $name=strtolower($name);
-        $data = $this->doQuery(sprintf("SELECT * FROM kvk WHERE LOWER(bedrijfsnaam) LIKE '%%%s%%' LIMIT 1;", $name));
+        $data = $this->doQuery(sprintf("SELECT * FROM kvk WHERE LOWER(bedrijfsnaam) LIKE '%%%s%%' LIMIT %d;", $name, $limit));
         return $data;
     }
 
