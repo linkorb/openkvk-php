@@ -30,6 +30,7 @@ Example usage:
 
     bin/openkvk # output available options
     bin/openkvk openkvk:getbykvk 24365015 # get info by kvk number
+    bin/openkvk openkvk:getbyname "LinkORB" # get info by companyname
     bin/openkvk openkvk:getbysbi 85.59.2 # get info by SBI (85592 = business training and education)
 
 ## Resources
