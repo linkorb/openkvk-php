@@ -6,7 +6,7 @@ This repository contains a simple PHP client for the [www.openkvk.nl](http://www
 
 Simply include the library through composer:
 
-    "linkorb/openkvk-php": "dev-master"
+    "linkorb/openkvk": "dev-master"
 
 After this, you can instantiate and use the client as follows:
 
