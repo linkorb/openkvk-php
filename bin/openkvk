@@ -3,7 +3,8 @@
 
 use Symfony\Component\Console\Application;
 
-require_once(__DIR__ . "/../vendor/autoload.php");
+// Allows the console tool to be used either as a standalone tool or as a vendor library for an existing project
+(@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
 
 $application = new Application('OpenKvk Console Tool', '1.0.0');
 $application->setCatchExceptions(true);
