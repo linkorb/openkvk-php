@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/linkorb/openkvk-php.png?label=ready)](https://waffle.io/linkorb/openkvk-php)
 # OpenKVK Client library + commandline utility
 
 This repository contains a simple PHP client for the [www.openkvk.nl](http://www.openkvk.nl) API.
