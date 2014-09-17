@@ -6,7 +6,7 @@
     "type": "library",
     "minimum-stability": "dev" ,
     "require": {
-        "symfony/console": "2.5.*@dev"
+        "symfony/console": "~2.5"
     },
     "autoload": {
         "psr-0": {
