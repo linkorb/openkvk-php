@@ -6,7 +6,7 @@ namespace OpenKvk;
 class Client
 {
     private $responseFormat = 'csv';
-    private $baseurl = 'http://api.openkvk.nl';
+    private $baseurl = 'https://officieel.openkvk.nl';
 
     public function setResponseFormat($format)
     {
