@@ -13,5 +13,8 @@
             "OpenKvk\\": "src/"
         }
     },
-    "bin": ["bin/openkvk"]
+    "bin": ["bin/openkvk"],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
 }
